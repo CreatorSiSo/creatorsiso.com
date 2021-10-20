@@ -1,0 +1,6 @@
+[submodule "creatorsiso.com-frontend"]
+	path = frontend
+	url = https://github.com/CreatorSiSo/creatorsiso.com-frontend.git
+[submodule "creatorsiso.com-cms"]
+	path = cms
+	url = https://github.com/CreatorSiSo/creatorsiso.com-cms.git
