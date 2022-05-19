@@ -1,10 +1,12 @@
+import '@/assets/styles/reset.scss'
+import '@/assets/styles/typography.scss'
+import '@/assets/styles/base.scss'
+
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import App from './App.vue'
 
+import App from './App.vue'
 import Home from './views/Home.vue'
-import Projects from './views/Projects.vue'
-import NotFound from './views/NotFound.vue'
 
 const router = createRouter({
 	history: createWebHashHistory(),

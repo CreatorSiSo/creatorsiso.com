@@ -1,20 +1,27 @@
 {
-  "name": "creatorsiso.xyz",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.25",
-    "vue-router": "^4.0.13"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.9",
-    "vue-tsc": "^0.34.7"
-  }
+	"name": "creatorsiso.xyz",
+	"private": true,
+	"version": "0.1.0",
+	"browserslist": [
+		"defaults",
+		"since 2015"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc --noEmit && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"vue": "^3.2.25",
+		"vue-router": "^4.0.13"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^2.3.3",
+		"autoprefixer": "^10.4.7",
+		"postcss": "^8.4.14",
+		"sass": "^1.51.0",
+		"typescript": "^4.5.4",
+		"vite": "^2.9.9",
+		"vue-tsc": "^0.34.7"
+	}
 }
