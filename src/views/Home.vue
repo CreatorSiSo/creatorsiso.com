@@ -1,14 +1,14 @@
 <template>
-	<section class="hero-section text_sans">
-		<p class="text_upper">Building immersive Experiences with</p>
-		<h1>
-			<span class="text_mono">Tech</span> & <span class="text_serif">Art</span>
-		</h1>
-	</section>
+	<HeroSection id="section1"></HeroSection>
 </template>
 
-<style scoped lang="scss">
-.hero-section {
-	height: 180vh;
+<script setup lang="ts">
+import HeroSection from '@/components/HeroSection.vue'
+</script>
+
+<style lang="scss">
+#section1 {
+	height: calc(100vh - 70px);
+	box-shadow: inset 0 0 0 1px black;
 }
 </style>
