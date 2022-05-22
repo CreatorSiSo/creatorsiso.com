@@ -1,21 +1,21 @@
 <template>
-	<section class="wrapper text_sans">
-		<div class="content">
-			<p class="text_upper overline">
+	<section class="h-full text_sans">
+		<div class="max-w-screen-2xl flex flex-col items-start mx-auto gap-4">
+			<p class="uppercase hero-section__overline">
 				I create
 				{{ randomOverlineAdjective }} {{ randomOverlineCreation }} with
 			</p>
-			<h1 class="headline">
-				<span class="text_mono">Tech</span>
+			<h1 class="hero-section__headline">
+				<span class="font-mono">Tech</span>
 				<span> & </span>
-				<span class="text_serif">Art</span>
+				<span class="font-serif">Art</span>
 			</h1>
 		</div>
 	</section>
 </template>
 
 <script setup lang="ts">
-import { getRandomElement } from '@/functions/array.js'
+import { getRandomElement } from '@/functions/array'
 
 const randomOverlineAdjective = getRandomElement([
 	'immersive',
@@ -33,34 +33,19 @@ const randomOverlineCreation = getRandomElement([
 </script>
 
 <style scoped lang="scss">
-@use '@/assets/styles/variables.scss';
+// TODO: Use typography from the design system
+.hero-section__overline {
+	font-weight: 600;
+	font-size: 2.7rem;
+}
 
-.wrapper {
-	height: 100%;
+.hero-section__headline {
+	font-weight: 600;
+	font-size: 14.5rem;
+	line-height: 15rem;
 
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		margin-inline: auto;
-		gap: 1rem;
-		max-width: variables.$content-max-width;
-
-		// TODO: Use typography from the design system
-		.overline {
-			font-weight: 600;
-			font-size: 2.7rem;
-		}
-
-		.headline {
-			font-weight: 600;
-			font-size: 14.5rem;
-			line-height: 15rem;
-
-			.text_serif {
-				font-weight: 700;
-			}
-		}
+	.font-serif {
+		font-weight: 700;
 	}
 }
 </style>

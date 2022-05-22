@@ -3,10 +3,12 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-	<header class="wrapper">
-		<div class="content">
+	<header class="px-12 py-[2.4rem] sticky top-0">
+		<div class="max-w-screen-2xl mx-auto flex items-center justify-between">
 			<RouterLink :to="{ name: 'Home' }" id="logo">CreatorSiSo.xyz</RouterLink>
-			<nav class="navigation">
+
+			<!-- TODO: Add hamburger menu for mobile devices -->
+			<nav id="navigation" class="flex gap-12">
 				<RouterLink :to="{ name: 'Home' }">Home</RouterLink>
 				<RouterLink :to="{ name: 'Projects' }">Projects</RouterLink>
 				<RouterLink :to="{ name: 'About' }">About</RouterLink>
@@ -17,42 +19,13 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style scoped lang="scss">
-@use '@/assets/styles/variables.scss';
-
-.wrapper {
-	padding: 2.4rem 3rem;
-	position: sticky;
-	top: 0;
-
-	.content {
-		display: flex;
-
-		align-items: center;
-		justify-content: space-between;
-		margin-inline: auto;
-		max-width: variables.$content-max-width;
-
-		#logo {
-			font-size: 2.4rem;
-			font-weight: 800;
-		}
-
-		.navigation {
-			display: flex;
-			gap: 3rem;
-			font-size: 1.8rem;
-			font-weight: 700;
-		}
-	}
+#logo {
+	font-size: 2.4rem;
+	font-weight: 800;
 }
 
-.page-navigation {
-	// TODO: Add hamburger menu for mobile devices
-	display: none;
-
-	@media (min-width: 500px) {
-		display: flex;
-		gap: 3rem;
-	}
+#navigation {
+	font-size: 1.8rem;
+	font-weight: 700;
 }
 </style>

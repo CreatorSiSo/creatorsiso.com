@@ -1,338 +1,67 @@
 <template>
-	<div
-		style="
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
-			width: 1500px;
-			gap: 10px;
-			margin-inline: auto;
-		"
-	>
+	<div class="flex flex-col mx-auto" style="width: 1500px; line-height: 1.3">
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 120px; font-weight: 700"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 120px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 120px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				120/1.3
-			</p>
+			<p>Visual Type Scale</p>
+			<p>120/1.3</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 90px; font-weight: 700"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 90px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 90px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				90/1.3
-			</p>
+			<p>Visual Type Scale</p>
+			<p>90/1.3</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 67px; font-weight: 700"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 67px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 67px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				67/1.3
-			</p>
+			<p>Visual Type Scale</p>
+			<p>67/1.3</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 50px; font-weight: 700"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 50px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 50px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				50/1.3
-			</p>
+			<p>Visual Type Scale</p>
+			<p>50/1.3</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 38px; font-weight: 700"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 38px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 38px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				38/1.3
-			</p>
+			<p>Visual Type Scale</p>
+			<p>38/1.3</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 28px; font-weight: 700"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 28px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 28px;
-					font-weight: 700;
-					text-align: left;
-					color: #000;
-				"
-			>
-				28/1.3
-			</p>
+			<p>Visual Type Scale</p>
+			<p>28/1.3</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 21px; font-weight: 500; line-height: 1.75"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 21px;
-					font-weight: 500;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 21px;
-					font-weight: 500;
-					text-align: left;
-					color: #000;
-				"
-			>
-				50/1.75
-			</p>
+			<p>Visual Type Scale</p>
+			<p>50/1.75</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 16px; font-weight: 500; line-height: 1.75"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 16px;
-					font-weight: 500;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 16px;
-					font-weight: 500;
-					text-align: left;
-					color: #000;
-				"
-			>
-				38/1.75
-			</p>
+			<p>Visual Type Scale</p>
+			<p>38/1.75</p>
 		</div>
 		<div
-			style="
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				align-self: stretch;
-				flex-grow: 0;
-				flex-shrink: 0;
-				position: relative;
-			"
+			class="flex justify-between items-center self-stretch"
+			style="font-size: 12px; font-weight: 500; line-height: 1.75"
 		>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 12px;
-					font-weight: 500;
-					text-align: left;
-					color: #000;
-				"
-			>
-				Visual Type Scale
-			</p>
-			<p
-				style="
-					flex-grow: 0;
-					flex-shrink: 0;
-					font-size: 12px;
-					font-weight: 500;
-					text-align: left;
-					color: #000;
-				"
-			>
-				28/1.75
-			</p>
+			<p>Visual Type Scale</p>
+			<p>28/1.75</p>
 		</div>
 	</div>
 </template>

@@ -1,5 +1,3 @@
-import '@/assets/styles/reset.scss'
-import '@/assets/styles/typography.scss'
 import '@/assets/styles/base.scss'
 
 import { createApp } from 'vue'
@@ -19,27 +17,27 @@ const router = createRouter({
 		{
 			path: '/about',
 			name: 'About',
-			component: import('@/views/About.vue'),
+			component: () => import('@/views/About.vue'),
 		},
 		{
 			path: '/projects',
 			name: 'Projects',
-			component: import('@/views/Projects.vue'),
+			component: () => import('@/views/Projects.vue'),
 		},
 		{
 			path: '/blog',
 			name: 'Blog',
-			component: import('@/views/Blog.vue'),
+			component: () => import('@/views/Blog.vue'),
 		},
 		{
 			path: '/:pathMatch(.*)*',
 			name: 'NotFound',
-			component: import('@/views/NotFound.vue'),
+			component: () => import('@/views/NotFound.vue'),
 		},
 		{
 			path: '/s',
-			name: 'Home',
-			component: import('@/views/DesignSystem.vue'),
+			name: 'DesignSystem',
+			component: () => import('@/views/DesignSystem.vue'),
 		},
 	],
 })
