@@ -11,7 +11,11 @@ import Home from './views/Home.vue'
 const router = createRouter({
 	history: createWebHashHistory(),
 	routes: [
-		{ path: '/', name: 'Home', component: Home },
+		{
+			path: '/',
+			name: 'Home',
+			component: Home,
+		},
 		{
 			path: '/about',
 			name: 'About',
@@ -31,6 +35,11 @@ const router = createRouter({
 			path: '/:pathMatch(.*)*',
 			name: 'NotFound',
 			component: import('@/views/NotFound.vue'),
+		},
+		{
+			path: '/s',
+			name: 'Home',
+			component: import('@/views/DesignSystem.vue'),
 		},
 	],
 })

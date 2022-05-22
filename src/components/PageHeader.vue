@@ -3,10 +3,10 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-	<header class="page-header">
-		<div class="page-header__content">
-			<RouterLink :to="{ name: 'Home' }">CreatorSiSo.xyz</RouterLink>
-			<nav class="page-navigation">
+	<header class="wrapper">
+		<div class="content">
+			<RouterLink :to="{ name: 'Home' }" id="logo">CreatorSiSo.xyz</RouterLink>
+			<nav class="navigation">
 				<RouterLink :to="{ name: 'Home' }">Home</RouterLink>
 				<RouterLink :to="{ name: 'Projects' }">Projects</RouterLink>
 				<RouterLink :to="{ name: 'About' }">About</RouterLink>
@@ -17,16 +17,32 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style scoped lang="scss">
-.page-header {
+@use '@/assets/styles/variables.scss';
+
+.wrapper {
 	padding: 2.4rem 3rem;
 	position: sticky;
 	top: 0;
 
-	.page-header__content {
+	.content {
 		display: flex;
+
+		align-items: center;
 		justify-content: space-between;
-		max-width: 1500px;
 		margin-inline: auto;
+		max-width: variables.$content-max-width;
+
+		#logo {
+			font-size: 2.4rem;
+			font-weight: 800;
+		}
+
+		.navigation {
+			display: flex;
+			gap: 3rem;
+			font-size: 1.8rem;
+			font-weight: 700;
+		}
 	}
 }
 

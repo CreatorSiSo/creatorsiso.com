@@ -20,19 +20,21 @@ import { getRandomElement } from '@/functions/array.js'
 const randomOverlineAdjective = getRandomElement([
 	'immersive',
 	'interactive',
-	'impressive',
+	// 'impressive',
 	'fun',
 ])
 
 const randomOverlineCreation = getRandomElement([
 	'Experiences',
 	'Tools',
-	'Stuff',
+	// 'Stuff',
 	'Things',
 ])
 </script>
 
 <style scoped lang="scss">
+@use '@/assets/styles/variables.scss';
+
 .wrapper {
 	height: 100%;
 
@@ -42,8 +44,7 @@ const randomOverlineCreation = getRandomElement([
 		align-items: flex-start;
 		margin-inline: auto;
 		gap: 1rem;
-		// TODO: Create a max-content-width variable
-		max-width: 1500px;
+		max-width: variables.$content-max-width;
 
 		// TODO: Use typography from the design system
 		.overline {
